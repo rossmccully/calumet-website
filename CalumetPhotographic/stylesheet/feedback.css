@@ -1,0 +1,14 @@
+﻿body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.feedback {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.feedback-text {
+    margin-left: 33%;
+    padding-top: 10px;
+}

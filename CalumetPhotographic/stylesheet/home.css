@@ -1,0 +1,115 @@
+﻿body {
+    font-family: 'Raleway', sans-serif;
+}
+
+#features {
+	font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #1a75ff;
+    padding-top: 2%;
+}
+
+#unique {
+	padding-top: -20px;
+   	text-align: center;
+   	text-transform: uppercase;
+   	font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.why {
+    background-color: #e6e6e6;
+    height: 450px;
+}
+
+.why-images {
+    width: 100px;
+    height: 100px;
+}
+
+#why-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+tr,td,th {
+    padding-left:50px;
+}
+
+
+.spaceunder {
+    padding-bottom: 3em;
+}
+
+.title {
+    padding-top: 50px;
+   	text-align: center;
+   	text-transform: uppercase;
+   	font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.brands {
+    width: 170px;
+    height: 45px;
+    padding-right: 40px;
+}
+
+.brands-logo {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 150px;
+}
+
+.about {
+    text-align: center;
+    background-color: #e6e6e6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.specialdealsevents {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 85px;
+}
+
+.ad1img {
+  margin: 0 auto;
+}
+
+.ad2img {
+  margin: 0 auto;
+}
+
+.ad3img {
+  margin: 0 auto;
+}
+
+.your-class {
+    width: 100%;
+    padding-top: 1%;
+}
+
+.img-div {
+    width: 100%
+}
+
+.img-div img {
+    margin: 0 auto;
+}

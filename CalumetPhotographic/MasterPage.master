@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Calumet Photographic - Home</title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet/template.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <script>
+    function showMessage(){
+            var output = document.getElementById("output").value;
+            display_message.innerHTML= "Form submitted";
+    }
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header class="header">
+        <a href="home.aspx"><img id="logo" src="../images/logoblack.png" /></a>
+        <div class="details-nav">
+            <ul class="top-nav">
+                <li>Welcome, <asp:Label ID="lblUser" runat="server"></asp:Label></li>
+                <li class="top-divider"><img src="../images/top-divider.png" alt="" /></li>
+                <li><a href="mailto:sales@calumetphoto.co.uk"><img src="../images/head-email.png" alt="" />Email Sales</a></li>
+                <li class="top-divider"><img src="../images/top-divider.png" alt="" /></li>
+                <li><a href="tel:16029105858"><img src="../images/head-phone.png" alt="" />90202322</a></li>
+            </ul>
+        </div>
+    </header>
+    <nav class="nav">
+        <ul class="nav-main">
+            <li><a class="nav-bar" href="../home.aspx">Home</a></li>
+            <li><a class="nav-bar" href="../cameras.aspx">Cameras</a></li>
+            <li><a class="nav-bar" href="../lenses.aspx">Lenses</a></li>
+            <li><a class="nav-bar" href="../videoandaudio.aspx">Video and Audio</a></li>
+            <li><a class="nav-bar" href="../accessories.aspx">Accessories</a></li>
+            <li><a class="nav-bar" href="../lighting.aspx">Lighting</a></li>
+            <li><a class="nav-bar" href="../contactus.aspx">Contact Us</a></li>
+            <li><a class="nav-bar" href="../feedback.aspx">Feedback</a></li>
+        </ul>
+
+        <!--a class="small button primary" href=".aspx">Logout</a>-->
+        <!--<asp:LinkButton ID="lbnLogout" CssClass="shoppingcarttext button small primary" runat="server" OnClick="lbnLogout_Click">Logout</asp:LinkButton>-->
+        <!--<a class="small button secondary" href="../login.aspx">Login</a>-->
+        <asp:LinkButton ID="lbnAdmin" runat="server" CssClass="button small secondary" OnClick="lbnAdmin_Click">Admin</asp:LinkButton>
+        <asp:HyperLink ID="hlblLoginout" runat="server" CssClass="button small primary" NavigateUrl="~/login.aspx">
+            <asp:Label ID="lblLoginout" runat="server" Text=""></asp:Label> </asp:HyperLink>
+        <!--<a href="#" class="shoppingcarttext button small third">Shopping Cart</a>-->
+        <asp:LinkButton ID="lbnCart" CssClass="shoppingcarttext button small third" runat="server" OnClick="lbnCart_Click">Cart : (0)</asp:LinkButton>
+        <a href="cart.aspx" class="shoppingcart"><img class="shoppingcart" src="../images/shopping-cart.png" /></a>
+        
+
+    </nav>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            
+        
+        </asp:ContentPlaceHolder>
+        <footer>
+            <img id="footer-logo" src="../images/logowhite.png" />
+            <p id="footer-copyright">
+                © Copyright Calumet Photographic 2017
+                <asp:Label ID="lblCopyright" runat="server"></asp:Label>
+            </p>
+            <a href="http://www.facebook.com"><img id="footer-logo1" src="../images/facebook.png" /></a>
+            <a href="http://www.twitter.com"><img id="footer-logo2" src="../images/twitter.png" /></a>
+            <a href="tel:16029105858"><img id="footer-logo3" src="../images/line.png" /></a>
+            <a id="footer-feedback" href="feedback.aspx" ><p class="footer-feedback">Got something to say? Give feedback!</p></a>
+            
+        </footer>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+		$(document).ready(function(){
+		    $('.your-class').slick({
+		        arrows: false,
+		        dots: true,
+		        autoplay: true,
+		        pauseOnHover: true,
+		        swipe: false,
+		        centerMode: true
+  		});
+		});
+    </script>
+    
+    <script src="JavaScript.js"></script>
+    </div>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+﻿body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.product {
+    margin: 1% 15%;
+    padding-top: 65px;
+}
+
+.product img {
+    width: 160px;
+    height: 160px;
+}
+
+.product table {
+
+}
+
+table, th, td {
+    padding: 15px 30px;
+    text-align: center;
+}
+
